@@ -1,19 +1,7 @@
 #header
   height: banner-height
   position: relative
-  border-bottom: 1px solid color-border
-  &:before, &:after
-    content: ""
-    position: absolute
-    left: 0
-    right: 0
-    height: 40px
-  &:before
-    top: 0
-    background: linear-gradient(rgba(0, 0, 0, 0.2), transparent)
-  &:after
-    bottom: 0
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.2))
+  margin-bottom: block-margin * -0.5
 
 #header-outer
   height: 100%
@@ -29,7 +17,7 @@
   left: 0
   width: 100%
   height: 100%
-  background: url(banner-url) center #000
+  //background: url(banner-url) center #000
   background-size: cover
   z-index: -1
 
@@ -43,9 +31,8 @@
 
 $logo-text
   text-decoration: none
-  color: #fff
+  color: color-default
   font-weight: 300
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)
 
 #logo
   @extend $logo-text
@@ -58,6 +45,7 @@ $logo-text
   font-size: subtitle-size
   line-height: subtitle-size
   letter-spacing: 1px
+  color: color-grey
 
 #subtitle-wrap
   margin-top: subtitle-size
@@ -68,7 +56,7 @@ $logo-text
 
 $nav-link
   float: left
-  color: #fff
+  color: color-default
   opacity: 0.6
   text-decoration: none
   text-shadow: 0 1px rgba(0, 0, 0, 0.2)
