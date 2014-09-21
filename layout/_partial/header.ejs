@@ -19,6 +19,15 @@
         <% } %>
       </nav>
       <nav id="sub-nav">
+        <% if (theme.pinterest){ %>
+          <a id="nav-pinterest-link" class="nav-icon" href="http://www.pinterest.com/<%- theme.pinterest %>" title="Pinterest"></a>
+        <% } %>
+        <% if (theme.twitter){ %>
+          <a id="nav-twitter-link" class="nav-icon" href="http://www.twitter.com/<%- theme.twitter %>" title="Twitter"></a>
+        <% } %>
+        <% if (theme.github){ %>
+          <a id="nav-github-link" class="nav-icon" href="http://www.github.com/<%- theme.github %>" title="Github"></a>
+        <% } %>
         <% if (theme.rss){ %>
           <a id="nav-rss-link" class="nav-icon" href="<%- theme.rss %>" title="RSS Feed"></a>
         <% } %>
